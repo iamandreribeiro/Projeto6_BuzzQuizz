@@ -45,6 +45,32 @@ main {
     justify-content: space-between;
 }
 
+.quizzes li {
+    position: relative;
+}
+
+.quizzes li h1 {
+    width: 300px;
+    position: absolute;
+    left: 18px;
+    bottom: 10px;
+    color: white;
+    font-size: 19px;
+    font-weight: 400;
+    z-index: 3;
+    overflow: hidden;
+}
+
+.gradient {
+    width: 100%;
+    height: 60px;
+    background-image: linear-gradient( rgba(255,0,0,0), rgb(0, 0, 0));
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    border-radius: 5px;
+}
+
 .crieSeuQuizz {
   width: 100%;
   height: 181px;
