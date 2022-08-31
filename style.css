@@ -26,7 +26,7 @@ main img {
 }
 
 main {
-  width: 1051px;
+  width: 55%;
   margin: auto;
 }
 
@@ -46,7 +46,7 @@ main {
 }
 
 .crieSeuQuizz {
-  width: 1051px;
+  width: 100%;
   height: 181px;
   border: 1px dashed #d5d5d5;
   border-radius: 5px;
