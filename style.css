@@ -29,6 +29,7 @@ header {
 .img-pag1 img {
   width: 100%;
   height: 100%;
+  border-radius: 5px;
 }
 
 main {
@@ -54,6 +55,7 @@ main {
   flex-wrap: wrap;
   justify-content: space-between;
   cursor: pointer;
+  
 }
 
 .quizzes li {
@@ -276,7 +278,7 @@ main {
   margin-bottom: 20px;
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 700px) {
     .pergunta, .nivel {
         width: 100%;
         padding: 18px;
@@ -335,6 +337,10 @@ main {
 
     .botoes {
       margin-top: 20px;
+    }
+
+    .quizzes {
+      justify-content: center;     
     }
 
 }
