@@ -19,19 +19,28 @@ header {
   font-size: 37px;
 }
 
-main img {
+.img-pag1 {
   width: 340px;
   height: 181px;
   border-radius: 5px;
   margin-bottom: 12px;
 }
 
+.img-pag1 img {
+  width: 100%;
+  height: 100%;
+}
+
 main {
   width: 55%;
   margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-.todosQuizzes {
+.todosQuizzes{
   margin-top: 77px;
   font-weight: 700;
 }
@@ -49,6 +58,8 @@ main {
 
 .quizzes li {
   position: relative;
+  word-wrap: break-word;
+  overflow: hidden;
 }
 
 .quizzes li h1 {
@@ -60,6 +71,7 @@ main {
   font-size: 19px;
   font-weight: 400;
   z-index: 3;
+  word-wrap: break-word;
   overflow: hidden;
 }
 
@@ -136,34 +148,68 @@ main {
   padding: 30px;
 }
 
-.tituloPergunta {
+.nivel {
+  width: 759px;
+  background-color: white;
+  margin: auto;
+  margin-top: 42px;
+  padding: 30px;
+}
+
+.respostasNivel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 30px;
+}
+
+.respostasNivel img {
+  width: 364px;
+}
+
+.caixaTexto {
+  width: 315px;
+  margin-left: 20px;
+  color: #484848;
+  font-weight: 700;
+  font-size: 19px;
+  word-wrap: break-word;
+}
+
+.tituloPergunta, .tituloNivel {   
     width: 100%;
     height: 137px;
-    display: flex;
+    display: flex; 
     align-items: center;
     justify-content: center;
     padding: 20px;
-    overflow: auto;
 }
 
-.tituloPergunta h1 {
+.tituloNivel {
+  background-color: #EC362D;
+}
+
+.tituloPergunta h1, .tituloNivel h1 {
     font-size: 23px;
     font-weight: 700;
     color: #FFFFFF;
+    width: 100%;
+    word-wrap: break-word;
 }
 
 .respostas {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    align-items: center;
 }
 
 .resposta-img h1 {
+    word-wrap: break-word;
     margin-top: 12px;
     font-weight: 700;
     font-size: 20px;
     cursor: pointer;
+    width: 330px;
 }
 
 .resposta-img img {
@@ -194,8 +240,84 @@ main {
   color: #FF0B0B;
 }
 
-@media screen and (max-width: 759px) {
-    .pergunta {
+.botoes {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 57px;
+}
+
+.botoes button {
+  margin: auto;
+  cursor: pointer;
+  border-radius: 15px;
+  background-color: #EC362D;
+  width: 260.38px;
+  height: 52px;
+  font-weight: 400;
+  font-size: 21px;
+  color: #FFF5F4;
+  border: none;
+}
+
+.voltar {
+  margin: auto;
+  cursor: pointer;
+  font-weight: 400;
+  font-size: 21px;
+  color: #818181;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+@media screen and (max-width: 375px) {
+    .pergunta, .nivel {
         width: 100%;
+        padding: 18px;
+        height: 100%;
     }
+
+    .respostasNivel {
+      flex-direction: column;
+      padding-top: 18px;
+    }
+
+    .respostasNivel img {
+      width: 340px;
+    }
+    
+    .caixaTexto {
+      margin-left: 0;
+      margin-top: 20px;
+      width: 340px;
+    }
+
+    main {
+      width: 100%;
+      padding: 18px;
+    }
+
+    .criar {
+      width: 50%;
+    }
+
+    .quizzes li h1{
+      width: 100%;
+    }
+
+    .todosQuizzes {
+      width: 100%;
+      margin-top: 30px;
+    }
+
+    .crieSeuQuizz {
+      margin-top: 12px;
+    }
+
+    .resposta-img img, .resposta-img h1 {
+      width: 163px;
+      height: 113px;
+    }
+
 }
