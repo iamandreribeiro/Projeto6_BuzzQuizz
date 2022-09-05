@@ -9,12 +9,13 @@
     <title>BuzzQuizz</title>
   </head>
   <body>
-    <header>BuzzQuizz</header>
+    <header onClick="inicio()">BuzzQuizz</header>
     <main>
-        <div class="crieSeuQuizz">
-            <h1>Você não criou nenhum quizz ainda :(</h1>
-            <div class="criar">Criar Quizz</div>
-        </div>
+      <div class="crieSeuQuizz">
+          <h1>Você não criou nenhum quizz ainda :(</h1>
+          <button class="criar" onClick="tela1()">Criar Quizz</button>
+      </div>
+
       <div class="todosQuizzes">
         <h1>Todos os Quizzes</h1>
         <ul class="quizzes">
@@ -22,6 +23,6 @@
       </div>
     </main>
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-    <script src="script.js"></script>
+    <script src="./script/script1.js"></script>
   </body>
 </html>
