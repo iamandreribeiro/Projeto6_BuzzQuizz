@@ -6,16 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="reset.css" />
     <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="./styles.css/style1.css" />
+    <!-- <link rel="stylesheet" href="./styles.css/style1.css" /> -->
     <title>BuzzQuizz</title>
   </head>
   <body>
     <header onClick="inicio()">BuzzQuizz</header>
     <main>
-      <div class="crieSeuQuizz">
-          <h1>Você não criou nenhum quizz ainda :(</h1>
-          <button class="criar" onClick="tela1()">Criar Quizz</button>
-      </div>
+      <div class="buttontext">
+      <div class="seusQuizzesText">Seus Quizzes</div>
+      <button class="criar display" onClick="tela1()">Criar Quizz</button>
+    </div>
+      <ul class="crieSeuQuizz">
+          
+      </ul>
 
       <div class="todosQuizzes">
         <h1>Todos os Quizzes</h1>
@@ -25,6 +28,6 @@
     </main>
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script src="./script.js"></script>
-    <script src="./script/script1.js"></script>
+    <!-- <script src="./script/script1.js"></script> -->
   </body>
 </html>
