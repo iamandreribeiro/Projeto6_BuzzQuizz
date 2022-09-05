@@ -20,7 +20,6 @@ header {
   font-size: 37px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   cursor: pointer;
-  margin-bottom: 30px;
 }
 
 .img-pag1 {
@@ -118,7 +117,7 @@ li h1 {
   height: 181px;
   border: 1px dashed #d5d5d5;
   border-radius: 5px;
-  margin-top: 77px;
+  margin-top: 107px;
   display: flex;
   flex-direction: column;
   align-items: center;
